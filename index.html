@@ -7,12 +7,12 @@
 <meta name="viewport" content="width=device-width", initial-scale="1.0" />
 
 <!--Font-Awsome Link-->
-<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/04f9b2276c.js" crossorigin="anonymous"></script>
 
 <!--Assets-->
 <link rel="shortcut icon" href="./Assets/favicon.ico" type="image/x-icon" />
 
-<!--Normalize Css File--> Css File-->
+<!--Normalize Css File-->
 <link rel="stylesheet" href="./CSS/normalize.css"/>
 
 <!--Main Css File-->
@@ -21,8 +21,28 @@
 
 <body>
 
-<header>
-
+<header class="navbar">
+    <div class="nav-center">
+        <!--Header-->
+        <div class="nav-header">
+            <a href="index.html" class="nav-logo">
+                <img src="./Assets/logo.svg" alt="simply recipes"/>
+            </a>
+            <button class="btn nav-btn">
+                <i class="fa-solid fa-align-justify"></i>
+            </button>
+        </div>
+        <!--Links-->
+        <div class="nav-links show-links">
+             <a href="index.html" class="nav-link">Home</a>
+             <a href="about.html" class="nav-link">About</a>
+             <a href="tags.html" class="nav-link">Tags</a>
+             <a href="recipes.html" class="nav-link">Recipes</a>
+             <div class="nav-link contact-link">
+                <a href="contact.html" class="btn">Contact</a>
+             </div>
+        </div>
+    </div>
 </header>
 
 <main>
@@ -30,6 +50,6 @@
 </main>
 
 <footer></footer>
-
+<script src="./JavaScript/App.js"></script>
 </body>
 </html>
