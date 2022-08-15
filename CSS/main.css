@@ -353,7 +353,55 @@ a{
    padding:0.15rem 1rem;
 }
 
+@media screen and (min-width:992px) 
+{
+   .nav-btn
+   {
+       display: none;
+   }
+   .nav-center
+   {
+      display: flex;
+      align-items: center;
+      height:8vh;
+   }
 
+   .nav-header
+   {
+      height: auto;
+      margin-right: 2rem;
+   }
+
+   .nav-links
+   {
+      height: auto;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+   }
+
+   .nav-link
+   {
+     text-decoration: none;
+     padding:0;
+     border-top: none;
+     margin-right: 1rem;
+     font-size: 1rem;
+   }
+   
+   .nav-links>a:hover
+   {
+     text-decoration: underline;
+     font-size: 1.1rem;
+   }  
+
+   .contact-link
+   {
+      margin-left:auto;
+      margin-right: 0;
+   }
+    
+}
 
 
 
