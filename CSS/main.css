@@ -363,7 +363,7 @@ a{
    {
       display: flex;
       align-items: center;
-      height:8vh;
+      height: 9vh;
    }
 
    .nav-header
@@ -388,7 +388,7 @@ a{
      margin-right: 1rem;
      font-size: 1rem;
    }
-   
+
    .nav-links>a:hover
    {
      text-decoration: underline;
@@ -403,8 +403,83 @@ a{
     
 }
 
+/*Page*/
+.page
+{
+    width:90vw;
+    max-width:var(--max-width);
+    margin:0 auto;
+    padding-top: 2rem;
+    min-height:87vh;
+}
 
 
+
+
+
+/*Footer*/
+
+
+.page-footer
+{
+    height: 4rem;
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.page-footer p
+{
+   margin-bottom: 0;
+}
+
+.footer-logo, .page-footer a
+{
+    color: var(--primary-500);
+}
+
+
+/*Hero*/
+
+.hero
+{
+    height: 40vh;
+    background: url('../Assets/main.jpeg') center/cover no-repeat;
+    margin-bottom: 2rem;
+    border-radius: var(--borderRadius); 
+    position: relative;
+}
+
+.hero-container{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background: rgba(0, 0,0,0.4);
+    border-radius: var(--borderRadius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text
+{
+    text-align: center;
+    color: var(--white);
+}
+
+@media screen and (min-width:768px)
+{
+    .hero-text h1
+    {
+        font-size: 4rem;
+        margin-bottom: 0;
+    }
+}
 
 
 
