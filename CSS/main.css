@@ -483,8 +483,9 @@ a{
 }
 
 
-/*Recipes*/
+/*Home Page*/
 
+/*Recipes*/
 .recipes-container
 {
     display:grid;
@@ -615,7 +616,126 @@ a{
 
 }
 
+/*Error Page*/
+.error-page
+{
+    text-align: center;
+    padding-top:5rem;
+}
+
+.error-page h1
+{
+    font-size:9rem;
+}
 
 
+/*About page*/
 
+.about-page h2
+{
+   text-transform:none;
+   font-weight: bold;
+}
+
+.about-page
+{
+    display: grid;
+    gap:2rem 4rem;
+    padding-bottom:3rem;
+}
+
+.about-img
+{
+    border-radius: var(--borderRadius);
+    height: 300px;
+}
+
+@media screen and (min-width:992px)
+{
+    .about-page{
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:400px;
+        align-items: center;
+    }
+    .about-img
+    {
+        height: 100%;
+    }
+}
+
+.featured-title
+{
+    text-align: center;
+}
+
+
+/*Contact Page*/
+.contact-form
+{
+    width: 100%;
+    margin:0;
+}
+
+.contact-container
+{
+    display: grid;
+    gap:2rem 3rem;
+    padding-bottom:3rem;
+}
+
+@media screen and (min-width:992px)
+{
+    .contact-container
+    {
+        grid-template-columns: 1fr 450px;
+        text-align:center;
+    }
+}
+
+/*Tags-Page*/
+
+.tags-wrapper
+{
+    display: grid;
+    gap:2rem;
+    padding-bottom: 3rem;
+}
+
+.tag
+{
+    background-color: var(--grey-500);
+    border-radius: var(--borderRadius);
+    text-align: center;
+    color: var(--white);
+    transition: var(--transition);
+    padding:0.75rem 0;
+}
+
+.tag:hover{
+    background-color: var(--primary-500);
+}
+
+.tag h5,.tag p
+{
+   margin-bottom: 0;
+}
+
+.tag h5{
+    font-weight: 600;
+}
+
+@media screen and (min-width:576px)
+{
+    .tags-wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width:992px) 
+{
+    .tags-wrapper 
+    {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
 
